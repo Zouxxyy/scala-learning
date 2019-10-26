@@ -1,0 +1,5 @@
+zxy apple
+dog
+pig
+cat fish apple
+dog dog
