@@ -88,8 +88,7 @@ object example01 {
     def withOfLength(s: String) = s.length.toString.length
 
     // 可以发现咱们scala打开文件不用写异常～
-    // 而且这里貌似只能写全路径
-    val textSource = Source.fromFile("/Users/zxy/IdeaProjects/scala-learning/progscala-learning/data/input/word.txt")
+    val textSource = Source.fromFile("data/input/word.txt")
     val lines = textSource.getLines().toList
     textSource.close()
 

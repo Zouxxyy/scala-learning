@@ -27,13 +27,13 @@ object example01 {
     println("\n闭包：")
 
     var more = 1
-    val addMore = (x: Int) => x + more
+    val addMore = (x: Int) => x + more // 函数自面量中包含一个自由变量
     println(addMore(10))
     more = 10
-    println(addMore(10)) // 闭包能看到外面的改变
+    println(addMore(10)) // 闭包能看到自由变量的改变
 
     numbers.foreach(more += _)
-    println(more) // 闭包对捕获变量的修改在外面也会生效
+    println(more) // 闭包对自由变量的修改在外面也会生效
 
 
     println("\n特殊的函数调用形式：")

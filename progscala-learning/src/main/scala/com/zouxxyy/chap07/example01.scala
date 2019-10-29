@@ -20,6 +20,7 @@ object example01 {
     val animals = Array("apple", "cat", "dog", "pig")
 
 
+    // for {} yield {}
     val newArray: Array[String] = for {
       array <- myArray if array.length == 2
       i <- array if i contains "z"             // 2重嵌套加过滤
