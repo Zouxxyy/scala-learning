@@ -1,20 +1,21 @@
-package com.zouxxyy
+package com.zouxxyy.chap18
 
 class Time {
 
-  var h = 12  // 默认是 private[this]
-  var m = 0
+  var h: Int = _  // 默认是 private[this]
+  var m: Int = _
 
-//  def h_(x: Int): Unit = {
-//    require(0 <= x && x < 24)
-//    h = x
-//  }
+  def h_(x: Int): Unit = {
+    require(0 <= x && x < 24)
+    h = x
+  }
 
   def m_(x: Int): Unit = {
     require(0 <= x && x < 60)
     m = x
   }
 
+  // P366 写的会自动生成 h_ 我模拟了好久没成功。。。
 }
 
 
@@ -33,3 +34,8 @@ object Time {
   }
 
 }
+
+/*
+0
+3
+ */

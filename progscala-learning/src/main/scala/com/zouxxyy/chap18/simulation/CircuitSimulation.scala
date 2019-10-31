@@ -1,5 +1,26 @@
 package com.zouxxyy.chap18.simulation
 
-class CircuitSimulation {
+abstract class CircuitSimulation extends BasicCircuitSimulation {
 
+  /**
+   *
+   * @param a 输入信号1
+   * @param b 输入信号2
+   * @param s 输出和
+   * @param c 高位进位信号
+   */
+  def halfAdder(a: Wire, b: Wire, s: Wire, c: Wire) {
+    val d, e = new Wire
+    orGate(a, b, d)
+    andGate(a, b, c)
+    inverter(c, e)
+    andGate(d, e, s)
+  }
+
+  def fullAdder(a: Wire, b: Wire, cin: Wire, sum: Wire, cout: Wire) {
+    val s, c1, c2 = new Wire
+    halfAdder(a, cin, s, c1)
+    halfAdder(b, s, sum, c2)
+    orGate(c1, c2, cout)
+  }
 }
