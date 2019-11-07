@@ -1,5 +1,9 @@
 package com.zouxxyy.chap05
 
+/**
+ * 第5章：基础类型和操作
+ */
+
 object example01 {
 
   def main(args: Array[String]): Unit = {

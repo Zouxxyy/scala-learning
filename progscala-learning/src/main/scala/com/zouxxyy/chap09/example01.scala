@@ -3,6 +3,10 @@ package com.zouxxyy.chap09
 import java.io.{File, PrintWriter}
 import java.util.Date
 
+/**
+ * 第9章：控制抽象
+ */
+
 object example01 {
 
   private def fileHere: Array[File] = new File("src/main/scala/com/zouxxyy/chap04").listFiles()

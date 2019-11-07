@@ -1,5 +1,9 @@
 package com.zouxxyy.chap08
 
+/**
+ * 第8章：函数和闭包
+ */
+
 object example01 {
 
   def main(args: Array[String]): Unit = {

@@ -1,7 +1,7 @@
 package com.zouxxyy.chap16
 
 /**
- * 使用 List
+ * 第16章：使用列表
  */
 
 object example01 {

@@ -3,6 +3,10 @@ package com.zouxxyy.chap03
 import scala.collection.mutable
 import scala.io.Source
 
+/**
+ * 第3章：Scala入门(续)
+ */
+
 object example01 {
 
   def main(args: Array[String]): Unit = {

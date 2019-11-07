@@ -3,6 +3,10 @@ package com.zouxxyy.chap17
 import scala.collection.mutable
 import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 
+/**
+ * 第17章：使用其它集合类
+ */
+
 object example01 {
 
   def main(args: Array[String]): Unit = {

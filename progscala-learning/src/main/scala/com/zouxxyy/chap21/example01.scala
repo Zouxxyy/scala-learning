@@ -1,5 +1,9 @@
 package com.zouxxyy.chap21
 
+/**
+ * 第21章：隐式转换和隐式参数
+ */
+
 import com.zouxxyy.chap06.Rational
 
 object example01 {
